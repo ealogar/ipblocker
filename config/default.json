@@ -1,0 +1,55 @@
+{
+    "app": {
+        "port": 3000
+    },
+
+    "redis": {
+        "url": "redis://redis:6379",
+        "ttl_hours": 48
+    },
+    
+    "updater": {
+        "refresh_time_minutes": 2,
+        "network_failures_refresh_time_minutes": 5,
+        "network_failures_threshold": 2,
+        "subnet_maxentries": 100000,
+        "max_life_entries_days": 2
+    },
+
+    "sources": [
+        {
+            "name": "feodo_badips",
+            "url": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/feodo_badips.ipset"
+        },
+        {
+            "name": "palevo",
+            "url": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/iblocklist_abuse_palevo.netset"
+
+        },
+        {
+            "name": "sslbl",
+            "url": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/sslbl.ipset"
+        },
+        {
+            "name": "stopforumspam_toxic",
+            "url": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/stopforumspam_toxic.netset"
+        },
+        {
+            "name": "bbcan177_ms1",
+            "url": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/bbcan177_ms1.netset"
+        },
+        {
+            "name": "dshield_top_1000",
+            "url": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/dshield_top_1000.ipset"
+        },
+        {
+            "name": "iblocklist_yoyo_adservers",
+            "url": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/iblocklist_yoyo_adservers.netset"
+        },
+        {
+            "name": "pushing_inertia_blocklist",
+            "url": "https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/pushing_inertia_blocklist.netset"
+        }
+    ]
+
+}

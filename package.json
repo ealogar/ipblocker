@@ -1,0 +1,36 @@
+{
+  "name": "com.auth0.ipchecker",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A service to check if an IP is untrusted",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auth0-interviews/ext-eduardo-alonso-exercise.git"
+  },
+  "keywords": [
+    "express",
+    "security",
+    "ipblock",
+    "redis"
+  ],
+  "author": "Eduardo Alonso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/auth0-interviews/ext-eduardo-alonso-exercise/issues"
+  },
+  "homepage": "https://github.com/auth0-interviews/ext-eduardo-alonso-exercise#readme",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.17.2",
+    "ip-set": "^2.1.0",
+    "node-fetch": "^3.2.0",
+    "range_check": "^2.0.4",
+    "redis": "^4.0.2",
+    "split": "^1.0.1"
+  }
+}

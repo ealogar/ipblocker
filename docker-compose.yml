@@ -1,0 +1,23 @@
+version: '3.6'
+
+services:
+  # Development and build container
+  ipblocker:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/opt/app/ipblocker:delegated
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+
+  # Cache for holding 
+  redis:
+    image: redis:5-alpine
+    expose:
+      - "6379"
+
+networks:
+  default:
